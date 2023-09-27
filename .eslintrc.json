@@ -6,8 +6,12 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": ["tsconfig.json"],
+        "tsconfigRootDir": "photo-gallery",
+        "sourceType": "module",
         "createDefaultProgram": true
       },
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
       "extends": [
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"

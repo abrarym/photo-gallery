@@ -1,0 +1,20 @@
+ion-content {
+  position: relative; // Establishes a stacking context for absolute positioning
+  height: 100%;
+
+  .centered-content {
+    position: absolute;
+    top: 50%; // Move the top edge to the center of the parent
+    left: 50%; // Move the left edge to the center of the parent
+    transform: translate(
+      -50%,
+      -50%
+    ); // Adjusts the content back by half its width and height
+    text-align: center; // Horizontally centers inline or inline-block children
+    width: 100%; // Take up full width
+  }
+
+  .checkbox-container {
+    margin-top: 16px; // Gives some space between the app-explore-container and the checkbox
+  }
+}
